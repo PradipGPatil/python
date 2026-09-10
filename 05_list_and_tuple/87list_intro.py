@@ -10,3 +10,6 @@ print(computor_parts[2])
 # note the output slice so slice return the list
 print(computor_parts[0:3])
 print(computor_parts[-1])
+
+computor_parts.append("Charger")
+print(computor_parts)

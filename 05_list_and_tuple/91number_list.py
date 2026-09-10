@@ -11,4 +11,4 @@ print(len(even))
 print(len(odd))
 
 print()
-print("ppattl".count("p"))
+print("ppattl".count("t"))

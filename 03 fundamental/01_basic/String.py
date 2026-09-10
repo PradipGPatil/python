@@ -6,7 +6,7 @@ print("hello "+"world")
 greeting="hello"
 print(type (greeting))
 
-#entered name is stored in the variable name
+#entered name is stored in the variable name since every function return a value
 name=input("please enter the your name")
 
 print(greeting+" "+name)
@@ -14,7 +14,8 @@ print(greeting+" "+name)
 ageInt=24
 print(ageInt)
 print(type(ageInt))
-# here for age we assing value of string so it considered as string
+
+# in below for age we assing value of string so it considered as string
 # it called bound to the value
 age="2 year"
 # by looking this seem like it week type langauge
