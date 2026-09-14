@@ -3,13 +3,9 @@ from contents import recipes, pantry
     here we are showing option to user to choce the recepy
 """
 
-def add_shoping_item(data:dict, item:str, amount:int)->None:
+def add_shoping_item(data:list, item:str, amount:int)->None:
     """Add a tupple containg `item` and `amount` to the `data` list."""
-    if item in data:
-        data[item]+=amount
-    else:
-        data[item]=amount
-
+    data.append((item,amount))
 
 
 
@@ -22,7 +18,7 @@ for index, key in enumerate(recipes):
     #  print(index,key, sep=" : ")
     display_dic[str(index+1)]=key
 
-shopping_list={}
+shopping_list=[]
 
 while True:
     # display the menu of the receipy we know how to cook
@@ -51,6 +47,8 @@ while True:
                 print(f"\t You need to buy the qty {quantity_to_buy} for the {food_item}")
                 add_shoping_item(shopping_list,food_item,quantity_to_buy)
 
-for things in shopping_list.items():
+for things in shopping_list:
     print(things)
+
+# the probleam with this code , we can get same shoping item multiple time
            

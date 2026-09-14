@@ -5,10 +5,11 @@ from contents import recipes, pantry
 
 def add_shoping_item(data:dict, item:str, amount:int)->None:
     """Add a tupple containg `item` and `amount` to the `data` list."""
-    if item in data:
-        data[item]+=amount
-    else:
-        data[item]=amount
+    # if item in data:
+    #     data[item]+=amount
+    # else:
+    #     data[item]=amount
+    data[item]=data.setdefault(item,0)+amount
 
 
 
